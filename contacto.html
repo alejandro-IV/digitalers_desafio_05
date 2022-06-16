@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Laboratorio 2</title>
+  </head>
+  <body>
+    <div></div>
+    <nav class="container">
+      <img id="logo" src="img/M5-logo-azul.svg" alt="logo" />
+      <a id="home" href="index.html">HOME</a>
+      <a href="contacto.html" class="activo2">CONTACTO</a>
+    </nav>
+
+    <section>
+      <h2>¿Querés que nos contactemos con vos?</h2>
+      <p>Dejanos tu consulta:</p>
+
+      <form>
+        <label for="nombre">Nombre Completo <b>*</b> </label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="Nombre Completo"
+          maxlength="30"
+          required
+        />
+        <label for="email">Email <b>*</b> </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="info@correo.com"
+          required
+        />
+        <label for="comentario">Comentario <b>*</b> </label>
+        <p>
+          <textarea
+            name="comentario"
+            id="comentario"
+            maxlength="300"
+            placeholder="Ingrese su comentario"
+            required
+          ></textarea>
+        </p>
+        <br />
+        <input class="botones" id="reset" value="Resetear" type="reset" /><input
+          class="botones"
+          value="Enviar"
+          id="enviar"
+          type="submit"
+        />
+      </form>
+    </section>
+  </body>
+</html>
